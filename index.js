@@ -7,9 +7,6 @@ const productRoutes = require("./Routes/ProductRoute")
 
 const app = express()
 
-app.use((req,res)=>{
-    res.send("hello world")
-})
 app.use(express.json())
 app.use(cors())
 db.connect(process.env.mongo_url)
